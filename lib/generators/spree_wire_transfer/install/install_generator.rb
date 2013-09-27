@@ -1,4 +1,4 @@
-module SpreeBankTransfer
+module SpreeWireTransfer
   module Generators
     class InstallGenerator < Rails::Generators::Base
 
@@ -11,7 +11,7 @@ module SpreeBankTransfer
       end
 
       def add_migrations
-        run 'bundle exec rake railties:install:migrations FROM=spree_bank_transfer'
+        run 'bundle exec rake railties:install:migrations FROM=spree_wire_transfer'
       end
 
       def run_migrations

@@ -1,8 +1,8 @@
-module SpreeBankTransfer
+module SpreeWireTransfer
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_bank_transfer'
+    engine_name 'spree_wire_transfer'
 
     config.autoload_paths += %W(#{config.root}/lib)
 
@@ -19,9 +19,9 @@ module SpreeBankTransfer
 
     config.to_prepare &method(:activate).to_proc
 
-    initializer "spree_bank_transfer.register.payment_methods" do |app|
+    initializer "spree_wire_transfer.register.payment_methods" do |app|
       app.config.spree.payment_methods += [
-        Spree::PaymentMethod::BankTransfer
+        Spree::PaymentMethod::WireTransfer
       ]
     end
   end

@@ -13,17 +13,17 @@ Installation
 Add either one of the following snippet to your `Gemfile`
 
 ``` ruby
-gem 'spree_bank_transfer' # rubygems.org
+gem 'spree_wire_transfer' # rubygems.org
 ```
 
 ``` ruby
-gem 'spree_bank_transfer', :github => 'fuyo/spree-bank-transfer', :tag => 'v1.0.0' # github.com
+gem 'spree_wire_transfer', :github => 'palanglung/spree-wire-transfer', :tag => 'v0.1.0' # github.com
 ```
 
 and then run the following snippets from the root of your [Spree][2] application.
 
 ``` shell
-$ rails g spree_bank_transfer:install
+$ rails g spree_wire_transfer:install
 ```
 
 Expected Checkout Flow
@@ -78,13 +78,20 @@ $ bundle exec rake test_app
 $ bundle exec rspec spec
 ```
 
-Copyright (c) 2013 [Joni Chandra](joniliciously@gmail.com), released under the New BSD License. For more information, see LICENSE.
+Copyright (c) 2013 [Yudi Rahono](palanglung@gmail.com), released under the New BSD License. For more information, see LICENSE.
+Original Gem Author: [Joni Chandra](joniliciously@gmail.com)
 
 To Do
 =====
 
 - No error check has been written when using the Twilio API.
 - No tests has been written.
+- Documentation
+
+Warning
+=======
+
+Incompatible with upstream source is a rewrite and has different feature with same flow.
 
 Resources
 =========
