@@ -1,5 +1,7 @@
 module Spree
   class PaymentMethod::WireTransfer < PaymentMethod
+    preference :account, :string
+    preference :login,   :string
 
     def actions
       %w{capture void}
