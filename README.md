@@ -102,3 +102,7 @@ Resources
 [2]: http://webchat.freenode.net/?channels=spree
 [3]: http://guides.spreecommerce.com/
 [4]: https://github.com/spree/spree-guides/tree/new_guides
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/palanglung/spree_wire_transfer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
