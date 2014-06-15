@@ -6,16 +6,16 @@ Gem::Specification.new do |s|
   s.summary     = 'Adds payment method by wire transfer'
   s.required_ruby_version = '>= 1.9.3'
 
-  s.authors    = ['Yudi Rahono']
-  s.email     = 'palanglung@gmail.com'
-  s.homepage  = 'https://github.com/palanglung/spree_wire_transfer'
+  s.authors    = ['James Hilliard']
+  s.email     = 'james.hilliard1@gmail.com'
+  s.homepage  = 'https://github.com/jameshilliard/spree_wire_transfer/'
 
   s.files       = `git ls-files`.split("\n")
   s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  spree_version = '~> 2.0'
+  spree_version = '~> 2.2'
   s.add_dependency 'spree_core', spree_version
   s.add_dependency 'spree_frontend', spree_version
   s.add_dependency 'spree_backend', spree_version
