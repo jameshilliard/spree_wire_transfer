@@ -1,20 +1,17 @@
 module Spree
   class BankAccount < ActiveRecord::Base
-    attr_accessible \
-      :bank_name,
-      :bank_branch,
-      :account_owner,
-      :account_number,
-      :short_code,
-      :swift_code
+    attr_accessor :bank_name
+    attr_accessor :bank_branch
+    attr_accessor :account_owner
+    attr_accessor :account_number
+    attr_accessor :short_code
+    attr_accessor :swift_code
 
-    validates \
-      :bank_name,
-      :bank_branch,
-      :account_owner,
-      :account_number, presence: true
-    validates \
-      :account_number,
+    validate :bank_name
+    validate :bank_branch
+    validate :account_owner
+    validate :account_number
+    validates :account_number, presence: true
       numericality: { only_integer: true },
       uniqueness:   { scope: :bank_name }
 
