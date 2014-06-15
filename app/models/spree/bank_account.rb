@@ -11,10 +11,7 @@ module Spree
     validate :bank_branch
     validate :account_owner
     validate :account_number
-    validates :account_number, presence: true
-      numericality: { only_integer: true },
-      uniqueness:   { scope: :bank_name }
-
+    validates :account_number, presence: true, numericality: { only_integer: true }, uniqueness:   { scope: :bank_name }
     scope :active, -> { where(active: true) }
   end
 end
