@@ -15,18 +15,18 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  spree_version = '~> 2.2'
+  spree_version = '~> 2.2.0'
   s.add_dependency 'spree_core', spree_version
   s.add_dependency 'spree_frontend', spree_version
   s.add_dependency 'spree_backend', spree_version
 
-  s.add_development_dependency 'rspec-rails', '~> 2.13'
-  s.add_development_dependency 'shoulda-matchers', '~> 2.4.0'
-  s.add_development_dependency 'factory_girl_rails', '~> 4.2.1'
-  s.add_development_dependency 'email_spec', '~> 1.4.0'
-  s.add_development_dependency 'capybara', '~> 2.1.0'
-  s.add_development_dependency 'database_cleaner', '~> 1.0.1'
-  s.add_development_dependency 'selenium-webdriver', '~> 2.35.0'
+  s.add_development_dependency 'rspec-rails', '~> 2.14'
+  s.add_development_dependency 'shoulda-matchers', '~> 2.6.0'
+  s.add_development_dependency 'factory_girl_rails', '~> 4.4.1'
+  s.add_development_dependency 'email_spec', '~> 1.6.0'
+  s.add_development_dependency 'capybara', '~> 2.3.0'
+  s.add_development_dependency 'database_cleaner', '~> 1.3.0'
+  s.add_development_dependency 'selenium-webdriver', '~> 2.42.0'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'launchy'
   s.add_development_dependency 'pry'
