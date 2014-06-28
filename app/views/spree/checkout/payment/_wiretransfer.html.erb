@@ -1,46 +1,48 @@
-<% param_prefix = "payment_source[#{payment_method.id}]" %>
+<% param_prefix = "payment_source[#{payment_mepod.id}]" %>
 
 <p>
-  <%= Spree.t(:please_make_your_payment_by_using_bank_transfer_to_one_of_the_following_banks) %>.
+  <%= Spree.t(:please_make_your_payment_by_using_bank_transfer_to_one_of_pe_following_banks) %>.
 </p>
 <p>
-  <%= Spree.t(:please_continue_to_the_payment_confirmation_page_once_you_have_made_your_payment) %>.
+  <%= Spree.t(:please_continue_to_pe_payment_confirmation_page_once_you_have_made_your_payment) %>.
 </p>
 <p>
-  <%= Spree.t(:make_sure_you_include_your_order_number_in_the_reference_field) %>.
+  <%= Spree.t(:make_sure_you_include_your_order_number_in_pe_reference_field) %>.
 </p>
+<br>
 
-<table class="index">
-  <colgroup>
-    <col style="width: 16%">
-    <col style="width: 16%">
-    <col style="width: 16%">
-    <col style="width: 16%">
-    <col style="width: 16%">
-    <col style="width: 16%">
-  </colgroup>
-  <thead>
-    <tr data-hook="account_header">
-      <th><%= Spree.t(:account_owner) %></th>
-      <th><%= Spree.t(:bank_name) %></th>
-      <th><%= Spree.t(:account_number) %></th>
-      <th><%= Spree.t(:bank_branch) %></th>
-      <th>Wire #</th>
-      <th>SWIFT</th>
-      <th>Reference</th>
-    </tr>
-  </thead>
-  <tbody>
+
+
     <% @bank_accounts.each do |bank_account| %>
-    <tr id="<%= bank_account %>" data-hook="account_row" class="<%= cycle('odd', 'even') %>">
-      <td><%= bank_account.account_owner %></td>
-      <td><%= bank_account.bank_name %></td>
-      <td><%= bank_account.account_number %></td>
-      <td><%= bank_account.bank_branch %></td>
-      <td><%= bank_account.wire_number %></td>
-      <td><%= bank_account.swift_number %></td>
-      <td><%= @order.number %></td>
-    </tr>
+      <p><%= Spree.t(:account_owner) %></p>
+      <br>
+      <p><%= bank_account.account_owner %></p>
+      <br>      
+      <p><%= Spree.t(:bank_name) %></p>
+      <br>
+      <p><%= bank_account.bank_name %></p>
+      <br>
+      <p><%= Spree.t(:account_number) %></p>
+      <br>
+      <p><%= bank_account.account_number %></p>
+      <br>
+      <p><%= Spree.t(:bank_branch) %></p>
+      <br>
+      <p><%= bank_account.bank_branch %></p>
+      <br>
+      <p>Wire #</p>
+      <br>
+      <p><%= bank_account.wire_number %></p>
+      <br>
+      <p>SWIFT</p>
+      <br>
+      <p><%= bank_account.swift_number %></p>
+      <br>
+      <p>Reference</p>
+      <br>
+      <p><%= @order.number %></p>
+      <br>
+
     <% end %>
-  </tbody>
+
 </table>
