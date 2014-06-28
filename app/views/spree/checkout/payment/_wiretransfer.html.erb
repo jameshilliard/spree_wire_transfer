@@ -14,31 +14,31 @@
 
 
     <% @bank_accounts.each do |bank_account| %>
-      <p><%= Spree.t(:account_owner) %></p>
+      <strong><%= Spree.t(:account_owner) %></strong>
       <br>
       <p><%= bank_account.account_owner %></p>
       <br>      
-      <p><%= Spree.t(:bank_name) %></p>
+      <strong><%= Spree.t(:bank_name) %></strong>
       <br>
       <p><%= bank_account.bank_name %></p>
       <br>
-      <p><%= Spree.t(:account_number) %></p>
+      <strong><%= Spree.t(:account_number) %></strong>
       <br>
       <p><%= bank_account.account_number %></p>
       <br>
-      <p><%= Spree.t(:bank_branch) %></p>
+      <strong><%= Spree.t(:bank_branch) %></strong>
       <br>
       <p><%= bank_account.bank_branch %></p>
       <br>
-      <p>Wire #</p>
+      <strong>Wire #</strong>
       <br>
       <p><%= bank_account.wire_number %></p>
       <br>
-      <p>SWIFT</p>
+      <strong>SWIFT</strong>
       <br>
       <p><%= bank_account.swift_number %></p>
       <br>
-      <p>Reference</p>
+      <strong>Reference</strong>
       <br>
       <p><%= @order.number %></p>
       <br>
