@@ -4,7 +4,9 @@ class CreateSpreeBankAccounts < ActiveRecord::Migration
       t.string :bank_name
       t.string :bank_branch
       t.string :account_owner
-      t.integer :account_number
+      t.string :account_number
+      t.string :wire_number
+      t.string :swift_number
       t.boolean :active, default: false
       t.timestamps
     end

@@ -2,7 +2,12 @@
 
 <p>
   <%= Spree.t(:please_make_your_payment_by_using_bank_transfer_to_one_of_the_following_banks) %>.
+</p>
+<p>
   <%= Spree.t(:please_continue_to_the_payment_confirmation_page_once_you_have_made_your_payment) %>.
+</p>
+<p>
+  <%= Spree.t(:make_sure_you_include_your_order_number_in_the_reference_field) %>.
 </p>
 
 <table class="index">
@@ -18,6 +23,9 @@
       <th><%= Spree.t(:bank_name) %></th>
       <th><%= Spree.t(:account_number) %></th>
       <th><%= Spree.t(:bank_branch) %></th>
+      <th>Wire #</th>
+      <th>SWIFT</th>
+      <th>Reference</th>
     </tr>
   </thead>
   <tbody>
@@ -27,6 +35,9 @@
       <td><%= bank_account.bank_name %></td>
       <td><%= bank_account.account_number %></td>
       <td><%= bank_account.bank_branch %></td>
+      <td><%= bank_account.wire_number %></td>
+      <td><%= bank_account.swift_number %></td>
+      <td><%= @order.number %></td>
     </tr>
     <% end %>
   </tbody>

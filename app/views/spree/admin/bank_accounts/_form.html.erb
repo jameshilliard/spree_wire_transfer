@@ -12,16 +12,24 @@
           <%= f.label :bank_branch, t(:bank_branch) %>
           <%= f.text_field :bank_branch, :class => 'fullwidth' %>
         </div>
-      </div>
-
-      <div class="omega six columns">
         <div data-hook="account_owner" class="field">
           <%= f.label :account_owner, t(:account_owner) %>
           <%= f.text_field :account_owner, :class => 'fullwidth' %>
         </div>
+      </div>
+
+      <div class="omega six columns">
         <div data-hook="account_number" class="field">
           <%= f.label :account_number, t(:account_number) %>
           <%= f.text_field :account_number, :class => 'fullwidth' %>
+        </div>
+        <div data-hook="wire_number" class="field">
+          <%= f.label :wire_number, t(:wire_number) %>
+          <%= f.text_field :wire_number, :class => 'fullwidth' %>
+        </div>
+        <div data-hook="swift_number" class="field">
+          <%= f.label :swift_number, t(:swift_number) %>
+          <%= f.text_field :swift_number, :class => 'fullwidth' %>
         </div>
       </div>
     </fieldset>

@@ -22,6 +22,8 @@
       <col style="width: 20%">
       <col style="width: 20%">
       <col style="width: 20%">
+      <col style="width: 20%">
+      <col style="width: 20%">
     </colgroup>
     <thead>
       <tr data-hook="account_header">
@@ -29,6 +31,8 @@
         <th><%= t(:bank_branch) %></th>
         <th><%= t(:account_owner) %></th>
         <th><%= t(:account_number) %></th>
+        <th><%= t(:wire_number) %></th>
+        <th><%= t(:swift_number) %></th>
         <th class="actions"></th>
       </tr>
     </thead>
@@ -39,6 +43,8 @@
         <td><%=bank_account.bank_branch %></td>
         <td><%=bank_account.account_owner %></td>
         <td><%=bank_account.account_number %></td>
+        <td><%=bank_account.wire_number %></td>
+        <td><%=bank_account.swift_number %></td>
         <td class="actions">
           <%= link_to_edit bank_account, :no_text => true %>
           <%= link_to_delete bank_account, :no_text => true %>
