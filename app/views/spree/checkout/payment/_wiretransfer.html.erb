@@ -14,53 +14,29 @@
 
 
     <% @bank_accounts.each do |bank_account| %>
-      <strong><%= Spree.t(:bank_name) %></strong>
+      <strong><%= Spree.t(:bank_name) %></strong><p><%= bank_account.bank_name %></p>
 
-      <p><%= bank_account.bank_name %></p>
-
-      <strong><%= Spree.t(:bank_address) %></strong>
-
-      <p><%= bank_account.bank_branch %></p>
+      <strong><%= Spree.t(:bank_address) %></strong><p><%= bank_account.bank_branch %></p>
       
-      <strong><%= Spree.t(:bank_phone) %></strong>
-
-      <p>phone placeholder</p>
+      <strong><%= Spree.t(:bank_phone) %></strong><p>phone placeholder</p>
       
-      <strong>SWIFT Code</strong>
-
-      <p><%= bank_account.swift_number %></p>
+      <strong>SWIFT Code</strong><p><%= bank_account.swift_number %></p>
       
-      <strong>Clearing NO</strong>
-
-      <p>clearing placeholder</p>
+      <strong>Clearing NO</strong><p>clearing placeholder</p>
       
-      <strong>CHIPS NO</strong>
-
-      <p>chips placeholder</p>
+      <strong>CHIPS NO</strong><p>chips placeholder</p>
       
-      <strong><%= Spree.t(:account_name) %></strong>
-
-      <p><%= bank_account.account_owner %></p>
+      <strong><%= Spree.t(:account_name) %></strong><p><%= bank_account.account_owner %></p>
       
-      <strong><%= Spree.t(:account_number) %></strong>
-
-      <p><%= bank_account.account_number %></p>
+      <strong><%= Spree.t(:account_number) %></strong><p><%= bank_account.account_number %></p>
       
-      <strong>Routing Number</strong>
-
-      <p><%= bank_account.wire_number %></p>
+      <strong>Routing Number</strong><p><%= bank_account.wire_number %></p>
       
-      <strong><%= Spree.t(:rock_miner_address) %></strong>
-
-      <p>rock miner address placeholder</p>
+      <strong><%= Spree.t(:rock_miner_address) %></strong><p>rock miner address placeholder</p>
       
-      <strong><%= Spree.t(:rock_miner_phone) %></strong>
-
-      <p>rock miner phone placeholder</p>
+      <strong><%= Spree.t(:rock_miner_phone) %></strong><p>rock miner phone placeholder</p>
       
-      <strong>Reference</strong>
-
-      <p><%= @order.number %></p>
+      <strong>Reference</strong><p><%= @order.number %></p>
       <br>
 
     <% end %>
