@@ -15,51 +15,51 @@
 
     <% @bank_accounts.each do |bank_account| %>
       <strong><%= Spree.t(:bank_name) %></strong>
-      <br>
+
       <p><%= bank_account.bank_name %></p>
 
       <strong><%= Spree.t(:bank_address) %></strong>
-      <br>
+
       <p><%= bank_account.bank_branch %></p>
       
       <strong><%= Spree.t(:bank_phone) %></strong>
-      <br>
+
       <p>phone placeholder</p>
       
       <strong>SWIFT Code</strong>
-      <br>
+
       <p><%= bank_account.swift_number %></p>
       
       <strong>Clearing NO</strong>
-      <br>
+
       <p>clearing placeholder</p>
       
       <strong>CHIPS NO</strong>
-      <br>
+
       <p>chips placeholder</p>
       
       <strong><%= Spree.t(:account_name) %></strong>
-      <br>
+
       <p><%= bank_account.account_owner %></p>
       
       <strong><%= Spree.t(:account_number) %></strong>
-      <br>
+
       <p><%= bank_account.account_number %></p>
       
       <strong>Routing Number</strong>
-      <br>
+
       <p><%= bank_account.wire_number %></p>
       
       <strong><%= Spree.t(:rock_miner_address) %></strong>
-      <br>
+
       <p>rock miner address placeholder</p>
       
       <strong><%= Spree.t(:rock_miner_phone) %></strong>
-      <br>
+
       <p>rock miner phone placeholder</p>
       
       <strong>Reference</strong>
-      <br>
+
       <p><%= @order.number %></p>
       <br>
 
